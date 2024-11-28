@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Grmostav | Isha</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+		rel="stylesheet">
+	<style>
+		/* Global Styles */
+		body {
+			font-family: 'Roboto', sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #ffffff;
+			color: #191919;
+			line-height: 1.63;
+		}
+
+		h1,
+		h2,
+		h3 {
+			margin: 0;
+			padding: 0;
+		}
+
+		a {
+			color: #D5661E;
+			text-decoration: none;
+		}
+
+		/* Layout Styles */
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			gap: 40px;
+		}
+
+		.header,
+		.section2,
+		.footer {
+			text-align: center;
+			border-radius: 8px;
+			color: #ffffff;
+		}
+
+		.section2 {
+			padding: 30px;
+			background-color: #48484d;
+		}
+
+		.header img {
+			max-width: 100%;
+			height: auto;
+			border: none;
+			border-radius: 0px 0px 8px 8px;
+			object-position: center center;
+			object-fit: cover;
+		}
+
+		.footer {
+			background-color: #171343;
+			padding: 30px;
+			border-radius: 8px;
+			margin-bottom: 40px;
+			width: -webkit-fill-available;
+		}
+
+		.content {
+			background-color: #fff8f0;
+			padding: 30px;
+			border-radius: 8px;
+		}
+
+		.cta-button {
+			display: inline-block;
+			background-color: #D5661E;
+			color: white;
+			padding: 14px 37px;
+			font-size: 20px;
+			font-weight: 500;
+			text-align: center;
+			border-radius: 5px;
+			margin-top: 20px;
+		}
+
+		.section2 h3 {
+			margin-top: 20px;
+		}
+
+		/* Video Styling */
+		.video-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 20px 0;
+			position: relative;
+			width: 100%;
+			max-width: 360px;
+		}
+
+		.video-container video {
+			width: 360px;
+			height: 640px;
+			object-fit: cover;
+			border-radius: 10px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		}
+
+		/* Responsive Design */
+		@media (max-width: 768px) {
+			.container {
+				padding: 15px;
+			}
+
+			.header img {
+				max-width: 100%;
+				height: auto;
+			}
+
+			.cta-button {
+				width: 100%;
+				font-size: 18px;
+				padding: 12px 30px;
+			}
+
+			.video-container video {
+				width: 100%;
+				height: auto;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<!-- Header Section -->
+		<header class="header">
+			<img src="./Public/Banner.jpeg" alt="Inner Engineering in Kerala">
+		</header>
+
+		<!-- Main Content Section -->
+		<section class="content">
+			<h1>Namaskaram,</h1>
+			<h2>Let's celebrate the sporting spirit of Rural India!</h2>
+			<p>Join us at <strong>Pallathu Ground Thalakode</strong> as we gather in high spirits for - <strong>Isha
+					Gramotsavam 2024</strong>.</p>
+			<p>We are excited to announce the celebration of the sporting culture of Rural India with a range of
+				exciting events and activities.</p>
+
+			<h3>What is Gramotsavam?</h3>
+			<div class="video-container">
+				<video controls autoplay loop muted>
+					<source src="./Public/banner.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+			<p>Gramotsavam is an effort to bring back the spirit of Bharat by making everyone’s life a little more
+				playful. It emphasizes the importance of physical, mental, and social well-being through sports and fun
+				activities.</p>
+
+			<p><strong>Date:</strong> November 30th & December 1st, 2024</p>
+			<p>For more information about the event, visit: <em><a href="https://isha.co/kerala"
+						target="_blank">https://isha.co/kerala</a></em></p>
+			<p>For any queries contact us:
+			<ul>
+				<li>96336 07688 </li>
+				<li>80781 15720 </li>
+			</ul>
+			</p>
+
+			<div style="text-align: center;">
+				<a href="https://isha.co/kerala" class="cta-button" target="_blank">Learn More</a>
+			</div>
+
+			<p>If you are inspired by the spirit of <strong>Gramotsavam</strong>, we invite you to volunteer and help us
+				create an unforgettable experience for all.</p>
+			<p>In joy and unity,<br><strong>Isha Volunteers</strong></p>
+		</section>
+
+		<!-- Footer Section -->
+		<section class="section2">
+			<h3>About Gramotsavam</h3>
+			<p>Gramotsavam, an initiative by Isha Foundation, is a celebration of the rural culture and its
+				sportsmanship. It is a part of Sadhguru's vision to revive traditional sports and engage communities in
+				a more joyful, physical, and social way.</p>
+			<p>Join us at Isha Gramotsavam 2024 to celebrate this vision, and experience a vibrant community atmosphere
+				that promotes health, well-being, and unity. Don’t miss out on the chance to be part of this exciting
+				movement.</p>
+		</section>
+
+		<footer class="footer">
+			<div>
+				<img src="./Public/logo.png" alt="">
+				<p>
+				<p>
+					© 2024, Sadhguru
+				</p>
+				Isha Yoga Center, Velliangiri Foothills
+				Ishana Vihar Post, Coimbatore, Tamil Nadu
+				<br>
+				<a href="https://isha.sadhguru.org">Isha.Sadhguru.org</a>
+				</p>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
