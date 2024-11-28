@@ -5,9 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Grmostav | Isha</title>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-		rel="stylesheet">
+	<title>Gramotsav | Isha</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 	<style>
 		/* Global Styles */
 		body {
@@ -19,9 +18,7 @@
 			line-height: 1.63;
 		}
 
-		h1,
-		h2,
-		h3 {
+		h1, h2, h3 {
 			margin: 0;
 			padding: 0;
 		}
@@ -41,11 +38,11 @@
 			justify-content: space-between;
 			align-items: center;
 			gap: 40px;
+			padding: 20px;
+			box-sizing: border-box;
 		}
 
-		.header,
-		.section2,
-		.footer {
+		.header, .section2, .footer {
 			text-align: center;
 			border-radius: 8px;
 			color: #ffffff;
@@ -67,24 +64,26 @@
 
 		.footer {
 			background-color: #171343;
-			padding: 30px;
+			padding: 20px;
 			border-radius: 8px;
 			margin-bottom: 40px;
-			width: -webkit-fill-available;
+			width: 100%;
+			box-sizing: border-box;
 		}
 
 		.content {
 			background-color: #fff8f0;
-			padding: 30px;
+			padding: 20px;
 			border-radius: 8px;
+			box-sizing: border-box;
 		}
 
 		.cta-button {
 			display: inline-block;
 			background-color: #D5661E;
 			color: white;
-			padding: 14px 37px;
-			font-size: 20px;
+			padding: 14px 20px;
+			font-size: 18px;
 			font-weight: 500;
 			text-align: center;
 			border-radius: 5px;
@@ -95,6 +94,31 @@
 			margin-top: 20px;
 		}
 
+		/* Quote Styling */
+		.quote {
+			margin: 20px 0;
+			padding: 20px;
+			background-color: #f9f4ee;
+			border-left: 4px solid #D5661E;
+			font-style: italic;
+			color: #333;
+			font-size: 1.1rem;
+			border-radius: 8px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		}
+
+		.quote p {
+			margin: 0;
+			font-weight: 500;
+		}
+
+		.quote .author {
+			margin-top: 10px;
+			text-align: right;
+			font-weight: bold;
+			color: #D5661E;
+		}
+
 		/* Video Styling */
 		.video-container {
 			display: flex;
@@ -103,13 +127,26 @@
 			margin: 20px 0;
 			position: relative;
 			width: 100%;
-			max-width: 360px;
 		}
 
 		.video-container video {
-			width: 360px;
-			height: 640px;
-			object-fit: cover;
+			max-height: 400px;
+			width: 100%;
+			object-fit: contain;
+			border-radius: 10px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		}
+
+		.judgebanner-container {
+			display: flex;
+			justify-content: center;
+			margin: 20px 0;
+		}
+
+		.judgebanner {
+			width: 100%;
+			max-height: 300px;
+			object-fit: contain;
 			border-radius: 10px;
 			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 		}
@@ -117,23 +154,75 @@
 		/* Responsive Design */
 		@media (max-width: 768px) {
 			.container {
-				padding: 15px;
+				gap: 20px;
+				padding: 10px;
 			}
 
-			.header img {
-				max-width: 100%;
-				height: auto;
+			h1 {
+				font-size: 1.8rem;
+			}
+
+			h2 {
+				font-size: 1.5rem;
+			}
+
+			h3 {
+				font-size: 1.2rem;
+			}
+
+			p {
+				font-size: 1rem;
 			}
 
 			.cta-button {
 				width: 100%;
-				font-size: 18px;
-				padding: 12px 30px;
+				font-size: 16px;
+				padding: 12px 15px;
 			}
 
 			.video-container video {
 				width: 100%;
-				height: auto;
+				max-height: 200px;
+			}
+
+			.judgebanner {
+				width: 100%;
+				max-height: 250px;
+			}
+
+			.quote {
+				font-size: 1rem;
+			}
+		}
+
+		@media (max-width: 480px) {
+			h1 {
+				font-size: 1.5rem;
+			}
+
+			h2 {
+				font-size: 1.2rem;
+			}
+
+			h3 {
+				font-size: 1rem;
+			}
+
+			p {
+				font-size: 0.9rem;
+			}
+
+			.cta-button {
+				font-size: 14px;
+				padding: 10px 12px;
+			}
+
+			.video-container video {
+				max-height: 150px;
+			}
+
+			.judgebanner {
+				max-height: 200px;
 			}
 		}
 	</style>
@@ -141,20 +230,19 @@
 
 <body>
 	<div class="container">
-		<!-- Header Section -->
 		<header class="header">
 			<img src="./Public/Banner.jpeg" alt="Inner Engineering in Kerala">
 		</header>
 
-		<!-- Main Content Section -->
 		<section class="content">
 			<h1>Namaskaram,</h1>
 			<h2>Let's celebrate the sporting spirit of Rural India!</h2>
-			<p>Join us at <strong>Pallathu Ground Thalakode</strong> as we gather in high spirits for - <strong>Isha
-					Gramotsavam 2024</strong>.</p>
-			<p>We are excited to announce the celebration of the sporting culture of Rural India with a range of
-				exciting events and activities.</p>
-
+			<p>Join us at <strong>Pallath Floodlit Stadium, Thalacode</strong> as we gather in high spirits for - <strong>Isha Gramotsavam 2024</strong>.</p>
+			<p>We are excited to announce the celebration of the sporting culture of Rural India with a range of exciting events and activities.</p>
+			<div class="quote">
+				<p>"Gramotsavam is an effort to bring back the spirit of Bharat by making everyone’s life a little more playful. To play is the highway to Physical, Mental, and Social Health.”</p>
+				<div class="author">- Sadhguru</div>
+			</div>
 			<h3>What is Gramotsavam?</h3>
 			<div class="video-container">
 				<video controls autoplay loop muted>
@@ -162,53 +250,33 @@
 					Your browser does not support the video tag.
 				</video>
 			</div>
-			<p>Gramotsavam is an effort to bring back the spirit of Bharat by making everyone’s life a little more
-				playful. It emphasizes the importance of physical, mental, and social well-being through sports and fun
-				activities.</p>
-
+			<p>Gramotsavam seeks to revive the vibrant spirit of Bharat by infusing joy and playfulness into everyday life. It highlights the significance of sports and recreational activities in fostering physical fitness, mental resilience, and social harmony.</p>
 			<p><strong>Date:</strong> November 30th & December 1st, 2024</p>
-			<p>For more information about the event, visit: <em><a href="https://isha.co/kerala"
-						target="_blank">https://isha.co/kerala</a></em></p>
+			<div class="judgebanner-container">
+				<img class="judgebanner" src="./Public/teams.jpeg" alt="Gramotsav judge">
+			</div>
+			<p>For more information about the event, visit: <em><a href="https://isha.co/kerala" target="_blank">https://isha.co/kerala</a></em></p>
 			<p>For any queries contact us:
 			<ul>
-				<li>96336 07688 </li>
-				<li>80781 15720 </li>
+				<li>96336 07688</li>
+				<li>80781 15720</li>
 			</ul>
 			</p>
-
 			<div style="text-align: center;">
 				<a href="https://isha.co/kerala" class="cta-button" target="_blank">Learn More</a>
 			</div>
-
-			<p>If you are inspired by the spirit of <strong>Gramotsavam</strong>, we invite you to volunteer and help us
-				create an unforgettable experience for all.</p>
+			<p>If you are inspired by the spirit of <strong>Gramotsavam</strong>, we invite you to volunteer and help us create an unforgettable experience for all.</p>
 			<p>In joy and unity,<br><strong>Isha Volunteers</strong></p>
 		</section>
 
-		<!-- Footer Section -->
 		<section class="section2">
 			<h3>About Gramotsavam</h3>
-			<p>Gramotsavam, an initiative by Isha Foundation, is a celebration of the rural culture and its
-				sportsmanship. It is a part of Sadhguru's vision to revive traditional sports and engage communities in
-				a more joyful, physical, and social way.</p>
-			<p>Join us at Isha Gramotsavam 2024 to celebrate this vision, and experience a vibrant community atmosphere
-				that promotes health, well-being, and unity. Don’t miss out on the chance to be part of this exciting
-				movement.</p>
+			<p>Gramotsavam, an initiative by Isha Foundation, is a celebration of the rural culture and its sportsmanship. It is a part of Sadhguru's vision to revive traditional sports and engage communities in a more joyful, physical, and social way.</p>
+			<p>Join us at Isha Gramotsavam 2024 to celebrate this vision, and experience a vibrant community atmosphere filled with enthusiasm and positivity.</p>
 		</section>
 
 		<footer class="footer">
-			<div>
-				<img src="./Public/logo.png" alt="">
-				<p>
-				<p>
-					© 2024, Sadhguru
-				</p>
-				Isha Yoga Center, Velliangiri Foothills
-				Ishana Vihar Post, Coimbatore, Tamil Nadu
-				<br>
-				<a href="https://isha.sadhguru.org">Isha.Sadhguru.org</a>
-				</p>
-			</div>
+			<p>&copy; 2024 Isha Foundation | All Rights Reserved</p>
 		</footer>
 	</div>
 </body>
