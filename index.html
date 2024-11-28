@@ -38,7 +38,7 @@
 			justify-content: space-between;
 			align-items: center;
 			gap: 40px;
-			padding: 20px;
+			padding:0px 20px;
 			box-sizing: border-box;
 		}
 
@@ -119,7 +119,6 @@
 			color: #D5661E;
 		}
 
-		/* Video Styling */
 		.video-container {
 			display: flex;
 			justify-content: center;
@@ -131,8 +130,9 @@
 
 		.video-container video {
 			max-height: 400px;
-			width: 100%;
-			object-fit: contain;
+			width: 400px;
+			object-fit: cover;
+			background-position: center center;
 			border-radius: 10px;
 			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 		}
@@ -144,64 +144,62 @@
 		}
 
 		.judgebanner {
-			width: 100%;
-			max-height: 300px;
+			/* width: 100%; */
+			max-height: 400px;
 			object-fit: contain;
 			border-radius: 10px;
 			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 		}
 
-		/* Responsive Design */
-		@media (max-width: 768px) {
+		@media (min-width: 428px) and (max-width: 768px){
 			.container {
 				gap: 20px;
-				padding: 10px;
+				padding:0px 10px;
 			}
 
 			h1 {
-				font-size: 1.8rem;
-			}
-
-			h2 {
 				font-size: 1.5rem;
 			}
 
-			h3 {
+			h2 {
 				font-size: 1.2rem;
 			}
 
+			h3 {
+				font-size: 1.125rem;
+			}
+
 			p {
-				font-size: 1rem;
+				font-size: 0.9rem;
 			}
 
 			.cta-button {
-				width: 100%;
+				width: 50%;
 				font-size: 16px;
 				padding: 12px 15px;
 			}
 
 			.video-container video {
-				width: 100%;
-				max-height: 200px;
+				max-height: 300px;
 			}
 
 			.judgebanner {
-				width: 100%;
-				max-height: 250px;
+				max-height: 300px;
 			}
 
 			.quote {
-				font-size: 1rem;
+				font-size: 0.9rem;
 			}
 		}
 
-		@media (max-width: 480px) {
+
+		@media (max-width: 426px) {
 			h1 {
-				font-size: 1.5rem;
+				font-size: 1.35rem;
 			}
 
 			h2 {
-				font-size: 1.2rem;
+				font-size: 1.125rem;
 			}
 
 			h3 {
@@ -209,7 +207,7 @@
 			}
 
 			p {
-				font-size: 0.9rem;
+				font-size: 0.8rem;
 			}
 
 			.cta-button {
@@ -218,11 +216,12 @@
 			}
 
 			.video-container video {
-				max-height: 150px;
+				max-height: 300px;
+				width: 100%;
 			}
-
+			
 			.judgebanner {
-				max-height: 200px;
+				max-height: 300px;
 			}
 		}
 	</style>
@@ -275,8 +274,18 @@
 			<p>Join us at Isha Gramotsavam 2024 to celebrate this vision, and experience a vibrant community atmosphere filled with enthusiasm and positivity.</p>
 		</section>
 
+
+
 		<footer class="footer">
-			<p>&copy; 2024 Isha Foundation | All Rights Reserved</p>
+			<div>
+				<img src="./Public/logo.png" alt="">
+				<p>
+					© 2024, Sadhguru
+				</p>
+				Isha Yoga Center, Velliangiri Foothills, Ishana Vihar Post, Coimbatore, Tamil Nadu
+				<br>
+				<a href="https://isha.sadhguru.org">Isha.Sadhguru.org</a>
+			</div>
 		</footer>
 	</div>
 </body>
